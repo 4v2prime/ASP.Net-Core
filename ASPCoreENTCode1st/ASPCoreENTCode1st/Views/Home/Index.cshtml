@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ASPCoreENTCode1st.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@{
+    if (TempData["alert_msg"]!=null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> @TempData["alert_msg"].
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
+<table class="table table-bordered table-hover table-light">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                    <a  asp-action="Edit" asp-controller="Home" asp-route-id="@item.ID">Edit</a> |
+                    <a class="popup"  asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.ID" onclick="confirm('Are you sure ?')">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<!--Modal-->
+<div aria-hidden="true" aria-labelledby="modal-create-edit-user-label" role="dialog" tabindex="-1" id="modal-create-edit-user" class="modal fade">
+    <div class="modal-dialog">
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script>
+    (function ($) {
+        function Index() {
+            var $this = this;
+            function initialize() {
+
+                $(".popup").on('click', function (e) {
+                    debugger;
+                    modelPopup(this);
+                });
+
+                function modelPopup(reff) {
+                    var url = @Html.ActionLink("Details","Home");
+
+                    $.get(url).done(function (data) {
+                        debugger;
+                        $('#modal-create-edit-user').find(".modal-dialog").html(data);
+                        $('#modal-create-edit-user > .modal', data).modal("show");
+                    });
+
+                }
+            }
+
+            $this.init = function () {
+                initialize();
+            };
+        }
+        $(function () {
+            var self = new Index();
+            self.init();
+        });
+    }(jQuery));
+</script>

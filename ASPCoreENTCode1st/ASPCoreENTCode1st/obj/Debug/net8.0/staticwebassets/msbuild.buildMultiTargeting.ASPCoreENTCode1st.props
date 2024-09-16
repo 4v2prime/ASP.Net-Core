@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASPCoreENTCode1st.props" />
+</Project>

@@ -1,0 +1,73 @@
+﻿@model DatabaseFirstAspCore.Models.TblAnimeList
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Isfavourite" class="control-label"></label>
+                <select asp-for="Isfavourite" class="form-control">
+                    <option>Select </option>
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+                <span asp-validation-for="Isfavourite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sataus" class="control-label"></label>
+                <select asp-for="Sataus" class="form-control" asp-items="ViewBag.Sataus">
+                    <option>Select</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                @if ((string?)TempData["edit"] == "yes")
+                {
+                    <input asp-action="Edit" formmethod="post" type="button" value="Update"  class="btn btn-outline-primary" />
+                }
+                else
+                {
+                    <input type="submit" value="Create" class="btn btn-outline-primary" />
+                }
+                <input type="button" asp-action="Index" value="Cancel" class="btn btn-outline-danger" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
