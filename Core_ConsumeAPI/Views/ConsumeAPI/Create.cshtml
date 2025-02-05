@@ -1,0 +1,12 @@
+﻿@model Core_ConsumeAPI.Models.Student
+
+<h4>Student</h4>
+<hr />
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

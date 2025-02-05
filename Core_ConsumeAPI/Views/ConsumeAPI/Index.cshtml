@@ -1,0 +1,384 @@
+﻿@model Core_ConsumeAPI.Models.Student
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<section>
+    <div class="p-2 m-2">
+        <div class="row">
+            <div class="col-md-4">
+                <form id="frmStud">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group" hidden>
+                        <label asp-for="Id" class="control-label"></label>
+                        <input asp-for="Id" class="form-control" />
+                        <span asp-validation-for="Id" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Address" class="control-label"></label>
+                        <input asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Contact" class="control-label"></label>
+                        <input asp-for="Contact" class="form-control" />
+                        <span asp-validation-for="Contact" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="City" class="control-label"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pincode" class="control-label"></label>
+                        <input asp-for="Pincode" class="form-control" />
+                        <span asp-validation-for="Pincode" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex mt-2 justify-content-center">
+                        <input type="button" id="btnUpdate" value="Edit" onclick="Update()" class="btn btn-primary mx-2" />
+                        <input type="button" id="btnSave" value="Create" onclick="Create()" class="btn btn-success mx-2" />
+                        <input type="button" value="Clear" onclick="Clear()" class="btn btn-danger mx-2" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h5>2nd form for the country state city</h5>
+                <form id="frmStud2">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group" hidden>
+                        <label asp-for="Id" class="control-label"></label>
+                        <input asp-for="Id" class="form-control" />
+                        <span asp-validation-for="Id" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Address" class="control-label"></label>
+                        <input asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Contact" class="control-label"></label>
+                        <input asp-for="Contact" class="form-control" />
+                        <span asp-validation-for="Contact" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Country" class="control-label"></label>
+                        <select name="Country" id="Country" class="form-control" asp-items="ViewBag.Country">
+                            <option value="">Select a Country</option>
+                        </select>
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="State" class="control-label"></label>
+                        <select asp-for="State" id="State" class="form-control">
+                            <option value="">Select State</option>
+                        </select>
+                        <span asp-validation-for="State" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="City" class="control-label"></label>
+                        <select asp-for="City" id="SelectCity" class="form-control">
+                            <option value="">Select City</option>
+                        </select>
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pincode" class="control-label"></label>
+                        <input asp-for="Pincode" class="form-control" />
+                        <span asp-validation-for="Pincode" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex mt-2 justify-content-center">
+                        <input type="button" id="btnUpdate" value="Edit" onclick="Update()" class="btn btn-primary mx-2" />
+                        <input type="button" id="btnSave" value="Create" onclick="Create()" class="btn btn-success mx-2" />
+                        <input type="button" value="Clear" onclick="Clear()" class="btn btn-danger mx-2" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contact)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pincode)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="tablebody">
+            @foreach (var item in Model.ListStudent)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contact)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pincode)
+                    </td>
+                    <td>
+                        <button class="btn btn-outline-primary" onclick="Edit(@item.Id)">Edit</button>
+                        <button class="btn btn-outline-secondary" onclick="Details(@item.Id)">Details</button>
+                        <button class="btn btn-outline-danger" onclick="confirmDelete(@item.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+<section>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="myModalLabel">Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    //load here
+    $(document).ready(function(){
+        $('#btnUpdate').hide();
+    });
+    //events here
+    $('#Country').change(function(){
+        LoadState();
+    });
+    $('#State').change(function(){
+        LoadCity();
+    });
+    function confirmDelete(id) {
+        if (confirm('Are you sure want to delete this user ?')) Delete(id);
+    }
+    function Edit(id){
+        $.ajax({
+            url: '/ConsumeAPI/Edit',
+            type: 'GET',
+            data:{id:id},
+            datatype:'json',
+            success: function (result) {
+                $('#btnSave').hide();
+                $('#btnUpdate').show();
+                $('#myModal').modal('hide');
+                loadControls(result);
+            }
+        });
+    }
+    function Details(id) {
+        $.ajax({
+            url: '/ConsumeAPI/Details',
+            method: 'GET',
+            data: { id: id },
+            cache: false,
+            success: function (result) {
+                $('#myModal .modal-body').html(result);
+                $('#myModal').modal('show');
+            },
+            error: function () {
+                alert('Failed to load details.');
+            }
+        });
+    }
+
+    function Delete(id){
+        $.ajax({
+            url: '/ConsumeAPI/Delete',
+            type: 'POST',
+            data:{id:id},
+            success: function (result) {
+                alert('Deleted');
+                LoadData();
+            },
+            Error:function(){
+                alert('error deleting user.!');
+            }
+
+        });
+    }
+    function LoadData(){
+        debugger;
+        $.ajax({
+            url: '/ConsumeAPI/StudentList',
+            type: 'GET',
+            success: function (result) {
+                 var rows = '';
+            $.each(result, function (index, student) {
+                rows += `<tr>
+                            <td>${student.id}</td>
+                            <td>${student.name}</td>
+                            <td>${student.email}</td>
+                            <td>${student.address}</td>
+                            <td>${student.contact}</td>
+                            <td>${student.city}</td>
+                            <td>${student.pincode}</td>
+                             <td>
+                                <button class="btn btn-outline-primary" onclick="Edit(${student.id})">Edit</button>
+                                <button class="btn btn-outline-secondary" onclick="Details(${student.id})">Details</button>
+                                <button class="btn btn-outline-danger" onclick="confirmDelete(${student.id})">Delete</button>
+                            </td>
+                        </tr>`;
+            });
+            $('.tablebody').html(rows);
+            }
+        });
+    }
+    function Create(){
+        debugger;
+        $.ajax({
+            url: '/ConsumeAPI/Create',
+            type: 'POST',
+            data: $('#frmStud').serialize(),
+            success: function (result) {
+                alert('Created');
+                    $('#frmStud')[0].reset();
+                    LoadData();
+            },
+            Error: function (result) {
+                alert('Error ! not created');
+            }
+        });
+    }
+    function Update(){
+        $.ajax({
+            url:'/ConsumeAPI/Edit',
+            type:'POST',
+            data:$('#frmStud').serialize(),
+            success:function(result){
+                alert('Updated');
+                $('#frmStud')[0].reset();
+                LoadData();
+            },
+            else:function(){
+                alert('Error ! not updated');
+            }
+        })
+    }
+    function loadControls(student){
+         $('#Id').val(student.id);
+         $('#Name').val(student.name);
+         $('#Email').val(student.email);
+            $('#Address').val(student.address);
+            $('#Contact').val(student.contact);
+            $('#City').val(student.city);
+            $('#Pincode').val(student.pincode);
+    }
+    function Clear(){
+        $('#Id').val('');
+        $('#Name').val('');
+        $('#Email').val('');
+        $('#Address').val('');
+        $('#Contact').val('');
+        $('#City').val('');
+        $('#Pincode').val('');
+    }
+    function LoadState(){
+        $.ajax({
+            url: '/ConsumeAPI/GetState',
+            type: 'GET',
+            data: { country: $('#Country').val() },
+            success: function (result) {
+                $('#State').empty();
+                $('#State').append($('<option>').text('Select State').attr('value', ''));
+                $.each(result, function (index, state) {
+                    $('#State').append($('<option>').text(state.text).attr('value', state.value));
+                });
+            }
+        });
+    }
+        function LoadCity(){
+        var country = $('#Country').val();
+        var state = $('#State').val();
+
+        console.log("Country:", country, "State:", state); 
+
+        if (!country || !state) {
+            alert("Please select both country and state.");
+            return;
+        }
+
+        $.ajax({
+            url: '/ConsumeAPI/GetCity',
+            type: 'GET',
+            data: { country: country, state: state },
+            success: function (result) {
+                console.log("Received Cities:", result); 
+
+                $('#SelectCity').empty();
+                $('#SelectCity').append($('<option>').text('Select City').attr('value', ''));
+
+                $.each(result, function (index, city) {
+                    $('#SelectCity').append($('<option>').text(city.text).attr('value', city.value));
+                });
+            },
+            error:function(){
+                alert('Error fetching cities');
+            }
+        });
+    }
+
+</script>

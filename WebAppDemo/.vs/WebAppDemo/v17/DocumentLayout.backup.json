@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\webappdemo\\webappdemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|solutionrelative:webappdemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\webappdemo\\webappdemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|solutionrelative:webappdemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\webappdemo\\webappdemo\\views\\home\\userregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|solutionrelative:webappdemo\\views\\home\\userregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\webappdemo\\webappdemo\\data\\repository\\tbluserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|solutionrelative:webappdemo\\data\\repository\\tbluserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\webappdemo\\webappdemo\\data\\infrastructure\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{774DD477-A766-4749-8424-4180EC99779B}|WebAppDemo\\WebAppDemo.csproj|solutionrelative:webappdemo\\data\\infrastructure\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2090367263:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebAppDemo\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebAppDemo\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T04:54:54.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Views\\Home\\UserRegistration.cshtml",
+              "RelativeDocumentMoniker": "WebAppDemo\\Views\\Home\\UserRegistration.cshtml",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Views\\Home\\UserRegistration.cshtml",
+              "RelativeToolTip": "WebAppDemo\\Views\\Home\\UserRegistration.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T04:49:19.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebAppDemo\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebAppDemo\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAhwDcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T04:27:03.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Data\\Infrastructure\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "WebAppDemo\\Data\\Infrastructure\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Data\\Infrastructure\\RepositoryBase.cs",
+              "RelativeToolTip": "WebAppDemo\\Data\\Infrastructure\\RepositoryBase.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAvwDMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T04:27:04.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tblUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Data\\Repository\\tblUserRepository.cs",
+              "RelativeDocumentMoniker": "WebAppDemo\\Data\\Repository\\tblUserRepository.cs",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\WebAppDemo\\WebAppDemo\\Data\\Repository\\tblUserRepository.cs",
+              "RelativeToolTip": "WebAppDemo\\Data\\Repository\\tblUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T04:27:04.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
