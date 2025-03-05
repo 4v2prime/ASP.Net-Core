@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "EXhjBJEfBCxgw/tkPJ1PfAgH5UKf6KFxM3JlQS54OrA=",
+  "Source": "Core_APISendMail",
+  "BasePath": "_content/Core_APISendMail",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

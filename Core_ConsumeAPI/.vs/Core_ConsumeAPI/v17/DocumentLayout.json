@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\Core_ConsumeAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D77153F-9BA3-4641-8BF9-4FE0EB5D5362}|Core_ConsumeAPI.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\core_consumeapi\\models\\consumeapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D77153F-9BA3-4641-8BF9-4FE0EB5D5362}|Core_ConsumeAPI.csproj|solutionrelative:models\\consumeapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D77153F-9BA3-4641-8BF9-4FE0EB5D5362}|Core_ConsumeAPI.csproj|c:\\users\\mi studio\\desktop\\asp.net-core\\core_consumeapi\\controllers\\consumeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D77153F-9BA3-4641-8BF9-4FE0EB5D5362}|Core_ConsumeAPI.csproj|solutionrelative:controllers\\consumeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:2090367263:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsumeAPI.cs",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\Core_ConsumeAPI\\Models\\ConsumeAPI.cs",
+              "RelativeDocumentMoniker": "Models\\ConsumeAPI.cs",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\Core_ConsumeAPI\\Models\\ConsumeAPI.cs",
+              "RelativeToolTip": "Models\\ConsumeAPI.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAwwAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T03:59:52.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsumeAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\Core_ConsumeAPI\\Controllers\\ConsumeAPIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ConsumeAPIController.cs",
+              "ToolTip": "C:\\Users\\MI Studio\\Desktop\\ASP.Net-Core\\Core_ConsumeAPI\\Controllers\\ConsumeAPIController.cs",
+              "RelativeToolTip": "Controllers\\ConsumeAPIController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T03:59:32.6Z"
             }
           ]
         }
